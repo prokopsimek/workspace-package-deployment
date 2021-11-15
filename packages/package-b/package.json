@@ -1,6 +1,6 @@
 {
   "name": "prokopsimek-package-b",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
