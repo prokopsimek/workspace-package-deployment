@@ -8,6 +8,6 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"],
   "references": [
-    { "path": "../package-core" }
+    { "path": "../prokopsimek-package-core" }
   ],
 }

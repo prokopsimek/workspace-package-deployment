@@ -12,12 +12,19 @@
     "docs": "typedoc",
     "lint": "eslint ./src ./packages --ext .ts --fix",
     "clean:all": "find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \\;\nfind . -name '.yalc' -type d -prune -print -exec rm -rf '{}' \\;\nfind . -name 'dist' -type d -prune -print -exec rm -rf '{}' \\;",
-    "test:deployment": "node deployment/dist/index.js"
+    "test:deployment": "node deployment/dist/index.js",
+    "release:version-bump": "lerna version",
+    "release:version-bump:server": "yarn run release:version-bump -- --force-publish=prokopsimek-package-core,prokopsimek-package-a,prokopsimek-package-b"
   },
   "private": true,
   "workspaces": [
     "packages/*"
   ],
+  "dependencies": {
+    "prokopsimek-package-core": "file:packages/prokopsimek-package-core",
+    "prokopsimek-package-a": "file:packages/prokopsimek-package-a",
+    "prokopsimek-package-b": "file:packages/prokopsimek-package-b"
+  },
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.7",

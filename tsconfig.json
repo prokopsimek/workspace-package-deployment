@@ -33,7 +33,11 @@
   "include": [],
   "exclude": [
     "node_modules",
-    "dist",
-    "packages"
+    "dist"
+  ],
+  "references": [
+    { "path": "./packages/prokopsimek-package-core" },
+    { "path": "./packages/prokopsimek-package-a" },
+    { "path": "./packages/prokopsimek-package-b" }
   ]
 }

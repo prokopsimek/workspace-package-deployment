@@ -5,7 +5,7 @@ import fetch from 'node-fetch'
 import semver from 'semver'
 
 async function run() {
-  const globber = await glob.create('**/packages/package-*/package.json')
+  const globber = await glob.create('**/packages/prokopsimek-package-*/package.json')
 
   const packages = { published: [], unpublished: [] }
 
