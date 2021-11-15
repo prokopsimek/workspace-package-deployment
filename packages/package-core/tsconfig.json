@@ -3,11 +3,9 @@
   "compilerOptions": {
     "outDir": "./dist",
     "baseUrl": "./",
-    "rootDir": "./src"
+    "composite": true,
+    "rootDir": "./src",
   },
-  "include": ["src/**/*"],
+  "include": ["src/*"],
   "exclude": ["node_modules", "dist"],
-  "references": [
-    { "path": "../package-core" }
-  ],
 }
