@@ -71,12 +71,12 @@ const publishPackage = async (file, packages) => {
 
 const runDeploy = async (directory) => {
   await yarnBuild(directory)
-  await exec.getExecOutput(`yarn --cwd ${directory} publish --access public`)
+  await exec.getExecOutput(`yarn --cwd ${directory} npm publish --access public`)
 }
 
 const yarnBuild = async (directory) => {
   await exec.getExecOutput(`yarn --cwd ${directory} cache clean`)
-  await exec.getExecOutput(`yarn --cwd ${directory} --force`)
+  await exec.getExecOutput(`yarn --cwd ${directory}`)
   await exec.getExecOutput(`yarn --cwd ${directory} build`)
 }
 
