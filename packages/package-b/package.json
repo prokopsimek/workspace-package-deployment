@@ -1,6 +1,6 @@
 {
   "name": "prokopsimek-package-b",
-  "version": "0.0.5",
+  "version": "0.0.5-alpha.1",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,8 +13,8 @@
     "lint": "eslint ./src --ext .ts --fix"
   },
   "dependencies": {
-    "package-core": "file:../package-core",
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "package-core": "file:../package-core"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
